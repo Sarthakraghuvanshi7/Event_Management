@@ -59,3 +59,58 @@ Django's migration system is used to create and update database tables. Run the 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
+```
+
+## Serializers
+
+Serializers are created using Django REST Framework to convert model instances to JSON and vice versa. These serializers play a crucial role in data serialization and deserialization for API endpoints. Additionally, validation logic is implemented within the serializers to enforce business rules and ensure data integrity.
+
+## Views
+
+Views handle API endpoints and interact with models. Authentication and authorization logic is implemented, differentiating between admin and participant roles. Permissions are enforced for editing or deleting events.
+
+## URLs
+
+URLs for API endpoints are defined in the project's URL configuration file (`urls.py`). They are mapped to their corresponding views. Appropriate permissions are set to restrict access based on user roles.
+
+## Authentication and Authorization
+
+The application uses JSON Web Tokens (JWT) for authentication. Authentication views and logic for issuing and verifying tokens are implemented. Additional logic is included for authorization of admin-only functionality.
+
+## Admin-related APIs
+
+The following APIs are available for event organizers:
+
+- Create, edit, and delete events.
+- View and manage user registrations for each event.
+- Accept or reject registration requests.
+- Manage venue information: add, edit, and remove venues.
+
+## Participant-related APIs
+
+The following APIs are available for event participants:
+
+- View upcoming events.
+- Filter events based on categories, tags, date, or location.
+- View detailed event information: title, description, date, time, location, and capacity.
+- Register for events by providing necessary information.
+
+## Docker Setup (Optional)
+
+If you prefer to use Docker for environment setup, follow these steps:
+
+1. Install Docker on your system.
+2. Use the provided `Dockerfile` and `docker-compose.yml` to build and run the application in a Docker container.
+
+## Bonus Features
+
+The project includes additional bonus features, such as event recommendations based on user interests.
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have an improvement idea, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
