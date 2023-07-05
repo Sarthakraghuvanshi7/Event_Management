@@ -15,9 +15,6 @@ This is an Event Management System web application developed using Django framew
 - [Admin-related APIs](#admin-related-apis)
 - [Participant-related APIs](#participant-related-apis)
 - [Docker Setup](#docker-setup)
-- [Bonus Features](#bonus-features)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview:
 
@@ -95,22 +92,11 @@ The following APIs are available for event participants:
 - View detailed event information: title, description, date, time, location, and capacity.
 - Register for events by providing necessary information.
 
-## Docker Setup (Optional)
+## Docker Setup
 
 If you prefer to use Docker for environment setup, follow these steps:
 
 1. Install Docker on your system.
 2. Use the provided `Dockerfile` and `docker-compose.yml` to build and run the application in a Docker container.
 
-## Bonus Features
-
-The project includes additional bonus features, such as event recommendations based on user interests.
-
-## Contributing
-
-Contributions are welcome! If you find a bug or have an improvement idea, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
